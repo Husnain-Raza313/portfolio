@@ -1,0 +1,140 @@
+.intro {
+  background-color: white;
+  display: flex;
+}
+
+.intro .left {
+  flex: 0.5;
+  overflow: hidden;
+}
+.intro .left .imgContainer {
+  height: 700px;
+  width: 700px;
+  background-color: teal;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  float: right;
+}
+.intro .left img {
+  height: 90%;
+}
+.intro .right {
+  flex: 0.5;
+  position: relative;
+}
+.intro .right .wrapper {
+  height: 100%;
+  width: 100%;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+.intro .right .wrapper h1 {
+  font-size: 60px;
+  margin: 10px 0;
+  font-weight: 500;
+}
+.intro .right .wrapper h2 {
+  font-size: 35px;
+  font-weight: 400;
+}
+.intro .right .wrapper h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.intro .right .wrapper h3 span {
+  font-size: 30px;
+  color: teal;
+}
+
+.intro .right a {
+  position: absolute;
+  bottom: 10px;
+  left: 40%;
+}
+.intro .right a img {
+  width: 30px;
+  animation: arrowBlink 4s infinite;
+}
+
+@keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Blinking Cursor  */
+
+.ityped-cursor {
+  opacity: 1;
+  -webkit-animation: blink 1s infinite;
+  -moz-animation: blink 1s infinite;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes blink {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro .left {
+    flex: 0.6;
+  }
+  .intro .right {
+    flex: 0.4;
+  }
+  .intro .left .imgContainer {
+    height: 450px;
+    width: 450px;
+    margin: 30px 5px;
+    margin-bottom: 0;
+  }
+
+  .intro .right .wrapper {
+    padding-left: 0px;
+  }
+  .intro .right .wrapper h1 {
+    font-size: 40px;
+  }
+  .intro .right .wrapper h2 {
+    font-size: 30px;
+  }
+  .intro .right .wrapper h3 {
+    font-size: 20px;
+  }
+  .intro .right .wrapper h3 span {
+    font-size: 20px;
+  }
+}

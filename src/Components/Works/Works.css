@@ -1,0 +1,130 @@
+.works {
+  background-color: teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.works .arrow {
+  height: 50px;
+  position: absolute;
+  cursor: pointer;
+}
+.works .arrow.left {
+  left: 100px;
+  transform: rotateY(180deg);
+}
+.works .arrow.right {
+  right: 100px;
+}
+.works .slider {
+  height: 350px;
+  display: flex;
+  position: absolute;
+  left: 0vw;
+  transition: 1s all ease-out;
+}
+.works .slider .container {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.works .slider .container .item {
+  width: 700px;
+  height: 100%;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.works .slider .container .item .left {
+  flex: 4;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.works .slider .container .item .left .leftContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
+  width: 90%;
+}
+.works .slider .container .item .left .leftContainer .imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgb(230, 157, 130);
+}
+
+.works .slider .container .item .left .leftContainer .imageContainer img {
+  width: 35px;
+}
+.works .slider .container .item .left .leftContainer h2 {
+  font-size: 20px;
+}
+.works .slider .container .item .left .leftContainer p {
+  font-size: 13px;
+}
+.works .slider .container .item .left .leftContainer span {
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.works .slider .container .item .right {
+  flex: 8;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.works .slider .container .item .right img {
+  object-fit: cover;
+  width: 400px;
+  transform: rotate(-10deg);
+}
+
+@media only screen and (max-width: 768px) {
+  .works {
+    overflow-y: hidden;
+  }
+  .works .arrow {
+    display: none;
+  }
+  .works .slider {
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+  }
+  .works .slider .container .item {
+    width: 90%;
+    height: 200px;
+    margin: 10px 0;
+  }
+  .works .slider .container .item .left {
+    height: 100%;
+  }
+  .works .slider .container .item .left .leftContainer {
+    height: 95%;
+    width: 100%;
+    padding: 5px 5px;
+  }
+  .works .slider .container .item .left .leftContainer h2 {
+    font-size: 16px;
+    margin: 2px 0;
+  }
+  .works .slider .container .item .left .leftContainer span {
+    margin: 5px;
+    margin-top: 0;
+  }
+}

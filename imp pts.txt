@@ -1,0 +1,25 @@
+always use round brackets with map function
+e.g.
+
+	{list.map((item)=>(
+			
+			))}
+
+for animation in fonts use ityped.
+for icons use material-ui icons.
+for animation in general use @keyframes.
+
+Dont give any space between colon of hover and the element.
+e.g.
+img:hover
+
+to display something on console while using ReactJS use this method for example to print a prop active
+
+{console.log(active)}
+
+when you wanted to send parameters in a function through OnClick 
+()=>setSelected(id)
+
+IMPORTANT!!!!
+
+you have to use media query in the end to not let bigger size override the media query values
